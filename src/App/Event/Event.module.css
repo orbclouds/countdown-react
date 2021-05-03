@@ -1,0 +1,15 @@
+.Title {
+  margin-left: 8px;
+}
+
+.Container {
+  height: 40px;
+  margin: 8px 0;
+  display: flex;
+  padding: 0 8px;
+  font-size: 0.9em;
+  border-radius: 3px;
+  align-items: center;
+  border: solid 1px #aaa;
+  justify-content: space-between;
+}

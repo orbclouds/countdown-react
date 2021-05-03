@@ -1,0 +1,19 @@
+.Button {
+  font: inherit;
+  color: white;
+  cursor: pointer;
+  appearance: none;
+  padding: 4px 8px;
+  background: #342ead;
+  border-radius: 3px;
+  border: solid 2px #342ead;
+  transition: background 0.1s
+      cubic-bezier(0.25, 0.1, 0.25, 1),
+    color 0.1s
+      cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.Button:hover {
+  color: #342ead;
+  background: white;
+}

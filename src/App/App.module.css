@@ -1,0 +1,14 @@
+.Header {
+  width: 80%;
+  height: 64px;
+  display: flex;
+  max-width: 900px;
+  margin: 32px auto;
+  align-items: center;
+}
+
+.Main {
+  width: 80%;
+  max-width: 900px;
+  margin: 16px auto;
+}
