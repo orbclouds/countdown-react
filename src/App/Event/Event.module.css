@@ -1,15 +1,38 @@
-.Title {
-  margin-left: 8px;
-}
-
 .Container {
-  height: 40px;
-  margin: 8px 0;
   display: flex;
+  margin: 8px 0;
   padding: 0 8px;
   font-size: 0.9em;
   border-radius: 3px;
   align-items: center;
+  flex-direction: column;
   border: solid 1px #aaa;
   justify-content: space-between;
+}
+
+.Prompt {
+  margin-right: 8px;
+}
+
+.Name,
+.Actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 568px) {
+  .Container {
+    flex-direction: row;
+  }
+
+  .Name,
+  .Actions {
+    flex-direction: row;
+  }
+
+  .Name {
+    justify-content: flex-start;
+  }
 }

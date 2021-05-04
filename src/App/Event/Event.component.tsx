@@ -28,30 +28,33 @@ const Event: FC<Props> = ({
 
   return (
     <div className={styles.Container}>
-      <div>
-        {days > 0 ? (
-          <>{days} days until:</>
-        ) : (
-          <>Event passed:</>
-        )}
+      <div className={styles.Name}>
+        <div className={styles.Prompt}>
+          {days > 0 ? (
+            <>{days} days until:</>
+          ) : (
+            <>Event passed:</>
+          )}
+        </div>
         <input
           type="text"
           value={title}
-          className={styles.Title}
           onChange={updateTitle(id)}
         />
       </div>
-      <input
-        type="date"
-        value={stringifyDate(date)}
-        onChange={updateDate(id)}
-      />
-      <Button
-        onClick={deleteEvent(id)}
-        tabIndex={-1}
-      >
-        - Delete Event
-      </Button>
+      <div className={styles.Actions}>
+        <input
+          type="date"
+          value={stringifyDate(date)}
+          onChange={updateDate(id)}
+        />
+        <Button
+          onClick={deleteEvent(id)}
+          tabIndex={-1}
+        >
+          - Delete Event
+        </Button>
+      </div>
     </div>
   );
 };
