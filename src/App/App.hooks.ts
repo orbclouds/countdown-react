@@ -12,7 +12,7 @@ const useHooks = (): Hooks => {
 
   const createEvent = useCallback(async () => {
     const id = btoa(
-      await crypto
+      crypto
         .getRandomValues(
           new Uint8Array(2)
         )
